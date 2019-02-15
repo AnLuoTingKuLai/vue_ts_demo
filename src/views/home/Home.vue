@@ -20,19 +20,23 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
 import HomeContent from "./components/content.vue";
-
+interface formData {
+  title: String;
+  content: String;
+  msg: String;
+}
 @Component({
   components: {
     HomeContent
   }
 })
 export default class Home extends Vue {
-  form: Object = {
+  form: formData = {
     title: "标题",
     content: "内容",
     msg: ""
   };
-  textContent: String = "12";
+  textContent: String | Number = 123;
 }
 </script>
 <style lang="scss">
