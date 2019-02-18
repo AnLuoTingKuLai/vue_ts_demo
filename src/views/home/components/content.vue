@@ -50,9 +50,9 @@ export default class HomeContent extends Vue implements HomeContent2 {
     type: String,
     default: "測試内容"
   })
-  content: string;
+  content!: string;
 
-  @Prop() title: string;
+  @Prop() title!: string;
 
   // data
   watchMsg: String = "";
@@ -73,7 +73,7 @@ export default class HomeContent extends Vue implements HomeContent2 {
   }
 
   //v-model 自定义双向监听
-  @Model("emitName", { type: String }) msg1: String;
+  @Model("emitName", { type: String }) msg1!: String;
 
   // created
   created() {
@@ -95,6 +95,7 @@ export default class HomeContent extends Vue implements HomeContent2 {
   }
   // 请求接口 获取数据 之后修改name
   axiosStoreChange() {
+    var a = 5;
     this.actionFoo({
       title: this.title,
       content: this.content
