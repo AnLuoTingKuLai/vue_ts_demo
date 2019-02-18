@@ -17,7 +17,9 @@
 
     <el-button @click="storeChange">修改store的值</el-button>
     <el-button @click="axiosStoreChange">请求axios之后修改store值</el-button>
-    <p>{{ storeName }}</p>
+    <p>
+      store数据: <span style="color: red">{{ storeName }}</span>
+    </p>
   </div>
 </template>
 
