@@ -103,3 +103,4 @@ export default class HomeContent extends Vue implements HomeContent2 {
   }
 }
 </script>
+<style lang="scss"></style>
