@@ -37,8 +37,8 @@ interface formData {
 export default class Home extends Vue {
   bgSwitch: Boolean = false;
   form: formData = {
-    title: "标题",
-    content: "内容",
+    title: "标题2",
+    content: "内容3",
     msg: ""
   };
   textContent: String | Number = 123;
